@@ -4,11 +4,12 @@ public class Kitabxana2 {
     private String kitabinSeriyaNomresi;
     private double qiymet;
     private int Eded;
+
     public Kitabxana2(String yazici, String kitabAdi, String kitabinSeriyaNomresi, double qiymet, int eded) {
         this.yazici = yazici;
         this.kitabAdi = kitabAdi;
         this.kitabinSeriyaNomresi = kitabinSeriyaNomresi;
-        this.qiymet=qiymet;
+        this.qiymet = qiymet;
         Eded = eded;
     }
 

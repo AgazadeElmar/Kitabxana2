@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws BookNotFound {
         ServiceKitabxana.kitabSiyahisi();
-        Scanner sc=new Scanner(System.in);
-        while (true){
+        Scanner sc = new Scanner(System.in);
+        while (true) {
             System.out.println("""
-                0-Sistemden cixmaq
-                1-Kitab siyahisini gormek
-                2-Kitab elave etmek
-                3-Yazicinin adina gore axtaris
-                4-Kitabin adina gore axtaris
-                5-Her hansi bir kitabin melumatlarini yenilemek ve ya deyismek
-                6-Her hansi bir kitabi silmek
-                7-Her hansi bir kitabi goturmek
-                8-Kitabi qaytarmaq
-                """);
+                    0-Sistemden cixmaq
+                    1-Kitab siyahisini gormek
+                    2-Kitab elave etmek
+                    3-Yazicinin adina gore axtaris
+                    4-Kitabin adina gore axtaris
+                    5-Her hansi bir kitabin melumatlarini yenilemek ve ya deyismek
+                    6-Her hansi bir kitabi silmek
+                    7-Her hansi bir kitabi goturmek
+                    8-Kitabi qaytarmaq
+                    """);
             System.out.print("Yerine yetirmek istediyiniz emeliyyatin nomresini daxil edin: ");
-            int input= sc.nextInt();
-            switch (input){
+            int input = sc.nextInt();
+            switch (input) {
                 case 0:
                     System.exit(0);
                 case 1:

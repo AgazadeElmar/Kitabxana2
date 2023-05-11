@@ -32,7 +32,7 @@ public class ServiceKitabxana {
         int eded = sc.nextInt();
         String helebele = sc.nextLine();
         Kitabxana daxilEdilen = new Kitabxana(yazici, kitabAdi, seriyaNomresi, qiymet, eded);
-        Kitabxana2 daxilEdilen2=new Kitabxana2(yazici,kitabAdi,seriyaNomresi,qiymet,eded);
+        Kitabxana2 daxilEdilen2 = new Kitabxana2(yazici, kitabAdi, seriyaNomresi, qiymet, eded);
 
         addList.add(daxilEdilen);
         addList2.add(daxilEdilen2);
@@ -128,7 +128,7 @@ public class ServiceKitabxana {
         for (int i = 0; i < addList.size(); i++) {
             if (x == i && addList.get(i).getEded() > 0) {
                 System.out.println(addList.get(i));
-                addList.get(i).setEded(addList.get(i).getEded()-1);
+                addList.get(i).setEded(addList.get(i).getEded() - 1);
                 b = true;
             } else if (x == i && addList.get(i).getEded() == 0) {
                 System.out.println("Kitab hal hazirda oxuyucudadir");
@@ -151,17 +151,17 @@ public class ServiceKitabxana {
         boolean b = false;
         boolean a = false;
         for (int i = 0; i < addList.size(); i++) {
-            if (x == i && addList.get(i).getEded() == addList2.get(i).getEded()){
+            if (x == i && addList.get(i).getEded() == addList2.get(i).getEded()) {
                 System.out.println("Bele bir kitab goturulmeyib!");
-                b=true;
-                a=true;
+                b = true;
+                a = true;
 
-            } else if (x == i && b==false) {
-                    System.out.println(addList.get(i));
-                    addList.get(i).setEded(addList.get(i).getEded() + 1);
+            } else if (x == i && b == false) {
+                System.out.println(addList.get(i));
+                addList.get(i).setEded(addList.get(i).getEded() + 1);
                 System.out.println("Elave olundu");
-                a=true;
-                }
+                a = true;
+            }
         }
         if (a == false) {
             BookNotFound.error();

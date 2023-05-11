@@ -9,7 +9,7 @@ public class Kitabxana {
         this.yazici = yazici;
         this.kitabAdi = kitabAdi;
         this.kitabinSeriyaNomresi = kitabinSeriyaNomresi;
-        this.qiymet=qiymet;
+        this.qiymet = qiymet;
         Eded = eded;
     }
 
