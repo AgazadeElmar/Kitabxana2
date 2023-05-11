@@ -13,6 +13,8 @@ public class Main {
                 4-Kitabin adina gore axtaris
                 5-Her hansi bir kitabin melumatlarini yenilemek ve ya deyismek
                 6-Her hansi bir kitabi silmek
+                7-Her hansi bir kitabi goturmek
+                8-Kitabi qaytarmaq
                 """);
             System.out.print("Yerine yetirmek istediyiniz emeliyyatin nomresini daxil edin: ");
             int input= sc.nextInt();
@@ -36,6 +38,12 @@ public class Main {
                     break;
                 case 6:
                     ServiceKitabxana.remove();
+                    break;
+                case 7:
+                    ServiceKitabxana.kitabGoturmek();
+                    break;
+                case 8:
+                    ServiceKitabxana.kitabQaytarmaq();
                     break;
                 default:
                     System.out.println("Qeyd etdiyiniz reqemde emeliyyat movcud deyil");
