@@ -159,7 +159,7 @@ public class ServiceKitabxana {
             } else if (x == i && b==false) {
                     System.out.println(addList.get(i));
                     addList.get(i).setEded(addList.get(i).getEded() + 1);
-                System.out.println("Elave oldunudu");
+                System.out.println("Elave olundu");
                 a=true;
                 }
         }
